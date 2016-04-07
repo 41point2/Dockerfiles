@@ -8,7 +8,7 @@ RUN 	echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/r
 	apk update && \
 	apk add apache2 apache2-ssl php7-apache2@testing apache2-utils apache2-error apache2-lua \
 	apache2-proxy apache2-proxy-html apache2-ldap apache2-icons apache2-webdav apache-mod-fcgid libxml2 \
-	apache2-mod-perl@testing apache-ant@testing python3 && \
+	apache2-mod-perl@testing python3 && \
 
 # This next lines use Sed to edit httpd.conf and files in /etc/apache2/conf.d. The default installation expects 
 # some files to be in different places - it's okay if you just install apache2, but when you start adding 
