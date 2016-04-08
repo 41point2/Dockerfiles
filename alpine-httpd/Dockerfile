@@ -2,7 +2,7 @@ FROM alpine:latest
 
 # We are going to add the testing repository to the repository file in /etc/apk/repositories,
 # then get the contents of the repos with apk update, then add Apache with mods/deps, OpenSSL,
-# php7 from testing, along with support for Perl, Java web apps and Python (Python3 in this case).
+# php7 from testing, along with support for Perl and Python (Python3 in this case).
 
 RUN 	echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
 	apk update && \
